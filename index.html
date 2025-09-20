@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sesjaphp</title>
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/56f3f17dd5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="card">
+            <div class="banner">
+                <video class="banner-video" autoplay muted loop playsinline>
+                     <source src="/img/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="pfp">
+                <img class="pfp-img" src="/img/pfp.jpg">
+            </div>
+            <div class="username">
+                <h2 class="username-text">sexual</h2>
+            </div>
+            <div class="description">
+                <h3 class="description-text">staff @ vacban.wtf</h3>
+            </div>
+            <div class="social-buttons">
+                <a class="social-button tg" target="_blank" href="https://t.me/xoraes">
+                   <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a class="social-button github" target="_blank" href="https://github.com/sesjaphp">
+                   <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="social-button steam" target="_blank" href="https://steamcommunity.com/id/sphp">
+                   <i class="fa-brands fa-steam"></i>
+                </a>
+                <a class="social-button vacban" target="_blank" href="https://vacban.wtf/members/103095/">
+                   <i class="fa-solid fa-circle-user"></i>
+                </a>
+            </div>
+        </div>
+         <script src="/js/tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelector(".card"), {
+		        max: 20,
+		        speed: 200,
+                reverse: true,
+                easing: "cubic-bezier(.03,.98,.52,.99)",
+                glare: false,
+	        });
+
+	VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <script>
+        const audio = new Audio('/other/3stars.mp3');
+        audio.loop = true;
+        audio.volume = 0.1
+        audio.play().catch(() => {
+            console.log("Autoplay blocked, user interaction needed");
+        });
+    </script>
+    </body>
+</html>
